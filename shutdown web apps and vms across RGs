@@ -4,7 +4,7 @@ $appid = Get-AutomationVariable -Name 'appid'
 				
 				
 connect-azaccount -certificatethumbprint $thumprint -applicationid $appid -tenant $tenantid -serviceprincipal
-set-azcontext -Subscription "284bc6ed-4e92-4149-aa3d-15d98ce038bf"
+set-azcontext -Subscription "****"
 				
 				
 				
