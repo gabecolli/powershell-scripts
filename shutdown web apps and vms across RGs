@@ -1,0 +1,26 @@
+$thumprint = Get-AutomationVariable -Name 'cert-thumprtint'
+$tenantid = Get-AutomationVariable -Name 'certtenantID'
+$appid = Get-AutomationVariable -Name 'appid'
+				
+				
+connect-azaccount -certificatethumbprint $thumprint -applicationid $appid -tenant $tenantid -serviceprincipal
+set-azcontext -Subscription "284bc6ed-4e92-4149-aa3d-15d98ce038bf"
+				
+				
+				
+$webapplist = get-azwebapp
+$vm_list = get-azvm
+				
+				
+				
+    				
+foreach ($vm in $vm_list){
+	stop-azvm -resourcegroupname $vm.ResourceGroupName -name $vm.name -force
+	write-output $vm.Name "Stopped"
+    }
+							
+				
+foreach ($webapp in $webapplist){
+	stop-azwebapp -resourcegroupname $webapp.ResourceGroup -name $webapp.name
+	write-output $webapp.Name "Stopped"
+    }
