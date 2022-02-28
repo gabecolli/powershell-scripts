@@ -1,0 +1,55 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Allowed resource types",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c",
+  "scope": "/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf",
+  "notScopes": [],
+  "parameters": {
+   "listOfResourceTypesAllowed": {
+    "value": [
+     "microsoft.classiccompute/virtualmachines",
+     "microsoft.classicstorage/storageaccounts",
+     "microsoft.classicstorage/capabilities",
+     "microsoft.classicstorage/checkstorageaccountavailability",
+     "microsoft.classicstorage/disks",
+     "microsoft.classicstorage/images",
+     "microsoft.classicstorage/operations",
+     "microsoft.classicstorage/osimages",
+     "microsoft.classicstorage/osplatformimages",
+     "microsoft.classicstorage/publicimages",
+     "microsoft.classicstorage/quotas",
+     "microsoft.classicstorage/storageaccounts/blobservices",
+     "microsoft.classicstorage/storageaccounts/fileservices",
+     "microsoft.classicstorage/storageaccounts/metricdefinitions",
+     "microsoft.classicstorage/storageaccounts/metrics",
+     "microsoft.classicstorage/storageaccounts/queueservices",
+     "microsoft.classicstorage/storageaccounts/services",
+     "microsoft.classicstorage/storageaccounts/services/diagnosticsettings",
+     "microsoft.classicstorage/storageaccounts/services/metricdefinitions",
+     "microsoft.classicstorage/storageaccounts/services/metrics",
+     "microsoft.classicstorage/storageaccounts/tableservices",
+     "microsoft.classicstorage/storageaccounts/vmimages",
+     "microsoft.classicstorage/vmimages"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "Gabriel Colli",
+   "parameterScopes": {
+    "listOfResourceTypesAllowed": "/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf"
+   },
+   "createdBy": "2e26dbf0-57a4-4e07-bb1f-6263c697ce11",
+   "createdOn": "2022-02-28T23:22:26.7532682Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf/providers/Microsoft.Authorization/policyAssignments/904d194de3564db19c4334c2",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "904d194de3564db19c4334c2"
+}
