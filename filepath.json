@@ -1,0 +1,9 @@
+{
+    "listOfAllowedResources":  {
+      "value": [
+        "Microsoft.Network/register/action",
+        "Microsoft.Network/unregister/action",
+        "Insert your allowed azure resources here"
+        ]
+    }
+}
