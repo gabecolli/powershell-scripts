@@ -1,0 +1,13 @@
+#creates bearer token
+$currentAzureContext = Get-AzContext
+$azureRmProfile = [Microsoft.Azure.Commands.Common.Authentication.Abstractions.AzureRmProfileProvider]::Instance.Profile;
+$profileClient = New-Object Microsoft.Azure.Commands.ResourceManager.Common.RMProfileClient($azureRmProfile);
+$AccessToken = $profileClient.AcquireAccessToken($currentAzureContext.Subscription.TenantId).AccessToken;
+
+
+$token = "Bearer " + $AccessToken
+
+$headers = @{
+    Authorization = $token
+    "Content-Type" = "application/json"
+}
