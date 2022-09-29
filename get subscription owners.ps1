@@ -33,12 +33,7 @@ foreach($role in $myarray.value){
    
     
     $roleid = $role.properties.roleDefinitionId
-   
-    
-    
-    
-    
-    
+
    if($roleid -eq "/subscriptions/$subid/providers/Microsoft.Authorization/roleDefinitions/$ownerid"){
     $numofowners += 1
    }
@@ -46,10 +41,10 @@ foreach($role in $myarray.value){
         
     
 }
-if($numofowners -gt 2){
-    Write-Output "$numofowners is waaayyy  TOoooooo Many Ownersss!"
-    
-}
+#write $numofowners
+
+$tags = @{"Owner" = $numofowners}
+new-aztag -ResourceId "/subscriptions/$subid" -Tag $tags
 
 
 
