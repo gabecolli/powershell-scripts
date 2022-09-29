@@ -7,12 +7,12 @@ $token = $profileClient.AcquireAccessToken($currentAzureContext.Subscription.Ten
 $uri = "https://management.azure.com/subscriptions/yoursubscription/resourceGroups/Demo-Automation/providers/Microsoft.Automation/automationAccounts/Automation/softwareUpdateConfigurations/test1?api-version=2019-06-01"
 $json = @"
 {
-    "id":"/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf/resourceGroups/Demo-Automation/providers/Microsoft.Automation/automationAccounts/Automation/softwareUpdateConfigurations/test1",
+    "id":"/subscriptions/subid/resourceGroups/Demo-Automation/providers/Microsoft.Automation/automationAccounts/Automation/softwareUpdateConfigurations/test1",
     "name":"test1",
     "type":null,
     "properties" : {
         "updateConfiguration": {
-            "azureVirtualMachines" : ["/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf/resourceGroups/Demo-Automation/providers/Microsoft.Compute/virtualMachines/windowsHRW"],
+            "azureVirtualMachines" : ["/subscriptions/subid/resourceGroups/Demo-Automation/providers/Microsoft.Compute/virtualMachines/windowsHRW"],
 
             "duration":"PT2H",
             "Linux" : null,
