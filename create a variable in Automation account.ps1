@@ -1,5 +1,5 @@
 ﻿
-$endpoint = "https://management.azure.com/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf/providers/Microsoft.Authorization/roleAssignments?api-version=2018-01-01-preview"
+$endpoint = "https://management.azure.com/subscriptions/subid/providers/Microsoft.Authorization/roleAssignments?api-version=2018-01-01-preview"
 
 
 $currentAzureContext = Get-AzContext
@@ -20,7 +20,7 @@ $headers = @{
 
 
 
-$automation_variable = "https://management.azure.com/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf/resourceGroups/Demo-Automation/providers/Microsoft.Automation/automationAccounts/Automation/variables/owners?api-version=2019-06-01"
+$automation_variable = "https://management.azure.com/subscriptions/subid/resourceGroups/Demo-Automation/providers/Microsoft.Automation/automationAccounts/Automation/variables/owners?api-version=2019-06-01"
 
 
 $body = '{
