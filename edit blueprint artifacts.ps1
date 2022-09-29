@@ -1,6 +1,6 @@
-﻿$AppID    = '6c7cfd89-c5a5-400a-9e9a-c1125b5e2c42'
-$Secret   = 'EBd8Q~iX7EmiIGyOlaNOUCMJ_9j9NYkq6IM1gdzh'
-$TenantID = '72f988bf-86f1-41af-91ab-2d7cd011db47'
+﻿$AppID    = '****'
+$Secret   = '******'
+$TenantID = '******'
 $Resource = "https://management.azure.com/"
 $TokenUri = "https://login.microsoftonline.com/$TenantID/oauth2/token/"
 $Body     = "client_id=$AppId&client_secret=$Secret&resource=$Resource&grant_type=client_credentials"
@@ -23,10 +23,10 @@ $body = @"
         "2e26dbf0-57a4-4e07-bb1f-6263c697ce11"
       ],
       "dependsOn": ["test1"],
-      "displayName": "Gabriel Colli (gabrielcolli@microsoft.com) : Owner"
+      "displayName": "name (email@microsoft.com) : Owner"
     },
     "kind": "roleAssignment",
-    "id": "/subscriptions/284bc6ed-4e92-4149-aa3d-15d98ce038bf/providers/Microsoft.Blueprint/blueprints/demo-bprint-3-09-2022/artifacts/2e96fd82-6895-44e4-afc3-24d1879c1197",
+    "id": "/subscriptions/******/providers/Microsoft.Blueprint/blueprints/demo-bprint-3-09-2022/artifacts/2e96fd82-6895-44e4-afc3-24d1879c1197",
     "type": "Microsoft.Blueprint/blueprints/artifacts",
     "name": "2e96fd82-6895-44e4-afc3-24d1879c1197"
   }
